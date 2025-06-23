@@ -4,45 +4,83 @@ body {
     background-color: #d7c7aa;
     color: #926f4f;
     font-size: 16px;
-  }
-  
-  /* Header styling */
-  header {
-    background-color: #00602b; /* Green */
+}
+
+/* nav styling */
+nav {
+    height: 35px;
+    background-color: #d7c7aa;
+    padding: 5px;
+}
+
+/* Anchor styling */
+a:link {
+    color: #8b1010;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:visited {
+    color: #00602b;
+    background-color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Header styling */
+header {
+    background-color: #00602b;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     font-style: italic;
     color: #ffffff;
-  }
-  
-  /* Headings */
-  h2, h3 {
+}
+
+/* Headings */
+h2, h3 {
     color: #342517;
-  }
-  
-  /* Paragraph styles */
-  p {
+}
+
+/* main styling */
+main {
+    font-weight: bold;
+    background-image: url(background.webp);
+    background-repeat: repeat-x;
+    padding: 10px;
+}
+
+/* Paragraph styles */
+p {
     color: #230e06;
     background-color: #ffffff;
-  }
-  
-  /* Highlighted span */
-  .highlight {
+    padding: 5px;
+}
+
+/* Highlighted span */
+.highlight {
     font-weight: bold;
     color: #ee1e28;
     font-style: italic;
-  }
-  
-  /* Specials item */
-  .special-item {
+}
+
+/* Specials item */
+.special-item {
     background-color: #ffffff;
-  }
-  
-  /* Footer */
-  #footer {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+#footer {
     text-align: center;
     color: white;
     background-color: #bb161d;
-  }
-  
+    padding: 5px;
+}
