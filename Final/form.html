@@ -1,0 +1,79 @@
+<!--
+Name: Joe Green
+Date: July 25, 2025
+Subject: Form Page - Responsive Website Project
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>US Open Feedback Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Feedback Form</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li><a href="https://www.usopen.com/" target="_blank">Official US Open Site</a></li>
+        <li><a href="file/sample.pdf" download>Download PDF</a></li>
+        <li><a href="mailto:info@example.com">Email Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <img src="tiger.jpg" alt="Tiger Woods" style="max-width: 100%; height: auto;">
+        <h2>We Value Your Feedback</h2>
+        <p>Please take a moment to fill out this form. Your feedback helps us improve our content and layout for all users.</p>
+
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="feedback">Your Feedback:</label>
+          <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+          <label for="satisfaction">Satisfaction Level:</label>
+          <select id="satisfaction" name="satisfaction">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+
+          <p>How did you hear about us?</p>
+          <input type="radio" name="source" value="friend" id="friend"><label for="friend"> Friend</label><br>
+          <input type="radio" name="source" value="web" id="web"><label for="web"> Web</label><br>
+          <input type="radio" name="source" value="other" id="other"><label for="other"> Other</label><br>
+
+          <p>Subscribe to newsletter:</p>
+          <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+          <label for="subscribe">Yes, sign me up!</label>
+
+          <label for="visit">Date of Visit:</label>
+          <input type="date" id="visit" name="visit">
+
+          <div class="form-buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Joe Green. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
