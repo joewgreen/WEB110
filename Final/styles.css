@@ -1,0 +1,131 @@
+/*
+Name: Joe Green
+Date: July 25, 2025
+Subject: External CSS Styles - Responsive Website
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  background-color: #0a2342; /* Navy */
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0a2342; /* Navy */
+  border-radius: 6px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 5px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #b3001b; /* Red accent */
+}
+
+/* Main Content */
+main {
+  display: flex;
+  gap: 2%;
+  margin-top: 1em;
+}
+
+section {
+  flex: 70%;
+}
+
+aside {
+  flex: 28%;
+  background-color: #f8f8f8;
+  padding: 8px;
+  border-left: 4px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.2em;
+  padding-left: 0.5em;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5em;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  padding: 5px;
+  background-color: #e6e6e6;
+  border-top: 2px solid #ccc;
+  border-radius: 6px;
+  margin-top: 1.5em;
+}
+
+/* Responsive: Single column for phone viewports */
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section, aside {
+    flex: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
